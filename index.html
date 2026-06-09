@@ -1,319 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chandu Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chandu Portfolio</title>
 
-  <!-- Embedded CSS -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #f2f2f2, #dfe6e9);
-    }
-
-    /* Navbar */
-    .navbar {
-      background-color: #1e1e2f;
-      color: white;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-brand {
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      position: relative;
-    }
-
-    .nav-links li {
-      position: relative;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      padding: 8px;
-    }
-
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      background-color: white;
-      top: 30px;
-      left: 0;
-      min-width: 120px;
-      z-index: 1;
-    }
-
-    .dropdown-menu li a {
-      color: black;
-      display: block;
-      padding: 10px;
-      text-decoration: none;
-    }
-
-    .dropdown-menu li a:hover {
-      background-color: #f1f1f1;
-    }
-
-    /* Hero Section */
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 50px;
-     background-image:url("bg.avif");
-     background-repeat: no-repeat;
-     background-size: cover;
-      min-height: 60vh;
-      flex-wrap: wrap;
-    }
-
-    .hero-text h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .hero-text h1 span {
-      color:whitesmoke;
-    }
-
-    .hero-text p {
-      font-size: 20px;
-      color: white;
-    }
-
-    .hero-image img {
-      width: 180px;
-      height: 200px;
-      border-radius: 50%;
-      border: 4px solid #0077b6;
-      object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    /* Boxes */
-    .boxes {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 40px;
-      padding-bottom: 60px;
-      flex-wrap: wrap;
-    }
-
-    .box {
-      width: 180px;
-      height: 180px;
-      background-color: #2980b9;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      border-radius: 12px;
-      position: relative;
-      cursor: pointer;
-      transition: transform 0.3s ease, filter 0.3s ease;
-      text-align: center;
-    }
-
-    .box.resume:hover {
-      transform: scale(1.2);
-      filter: brightness(0.7);
-    }
-
-    .box.projects:hover {
-      filter: brightness(0.7);
-      transform: scale(1.2);
-    }
-
-    .project-number {
-      position: absolute;
-      top: 10px;
-      right: 14px;
-      font-size: 24px;
-      font-weight: bold;
-      color: white;
-      opacity: 0.5;
-    }
-
-    /* Sections */
-    .content-section {
-      padding: 60px 30px;
-      background-color: #f8f9fa;
-      border-top: 1px solid #ddd;
-    }
-
-    .content-section h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-    .resume-buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .resume-buttons button {
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    padding: 12px 22px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .resume-buttons button:hover {
-    background-color: #005f87;
-  }
-  .project-box {
-  background:url("opd1.png");
-  background-size: cover;
-  color: white;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 200px;
-  margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
-  
-}
-a{
-    text-decoration: none;
-}
-.project-box:hover {
-  transform: scale(1.05);
-  filter: brightness(0.85);
-}
-
-.project-box h3 {
-  margin-bottom: 10px;
-}
-
-  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-brand">MyPortfolio</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li class="dropdown">
-        <a href="#">About Me</a>
-        <ul class="dropdown-menu">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Hi, I am <span>Kalapareddy Chandu Kumar Reddy</span></h1>
-      <p>Full Stack Web Developer</p>
-    </div>
-    <div class="hero-image">
-      <img src="C:\xampp\htdocs\project\chandu.jpg" alt="Profile Photo" />
-    </div>
-  </section>
+<!-- NAV -->
+<nav class="navbar glass">
+  <div class="brand">MyPortfolio</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Resume & Projects Boxes -->
-  <section class="boxes">
-    <div class="box resume" onclick="document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });">
-      My Resume
-    </div>
-    <div class="box projects" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
-      My Projects
-      <span class="project-number">1</span>
-    </div>
-  </section>
+<!-- HERO -->
+<section id="home" class="hero glass">
+  <div>
+    <h1>Hi, I am <span id="typing"></span></h1>
+    <p>AI & ML Student | Web Developer</p>
+  </div>
 
- <!-- Resume -->
-<section id="resume" class="content-section">
+  <img src="chandu.png" alt="profile">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="card glass">
+  <h2>About Me</h2>
+  <p>
+    I build web apps, explore AI/ML, and love creating clean UI experiences.
+    I enjoy turning ideas into real projects.
+  </p>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="card glass">
   <h2>Resume</h2>
-  <div class="resume-buttons">
-    <button onclick="window.open('your-resume.pdf', '_blank')">View Resume</button>
-    <button onclick="window.location.href='your-resume.pdf'" download>Download Resume</button>
+  <div class="btn-group">
+    <button onclick="window.open('your-resume.pdf')">View</button>
+    <button onclick="window.location.href='your-resume.pdf'">Download</button>
   </div>
 </section>
 
-  <!-- Projects -->
-<section id="projects" class="content-section">
+<!-- PROJECTS -->
+<section id="projects" class="card glass">
   <h2>Projects</h2>
-  <a href="http://opd.infy.uk">
-  <div class="project-box">
-    <h3>OPD (Online Pendrive)</h3>
-    <p>OPD is a platform to store files securely and access them from any device through a simple login.</p>
-  </div></a>
+
+  <div class="project glass" onclick="window.open('http://opd.infy.uk')">
+    <h3>OPD Project</h3>
+    <p>Online file storage system</p>
+  </div>
 </section>
 
+<!-- SKILLS -->
+<section class="card glass">
+  <h2>Skills</h2>
+  <p>HTML • CSS • JS • Python • Java • SQL</p>
+  <p>Tools: Git • Docker • VS Code</p>
+</section>
 
-  <!-- Skills -->
-  <section id="skills" class="content-section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript,jQuery</li>
-      <li>Python(Numpy),Java,C</li>
-      <li>SQL,MYSQL</li>
-    </ul>
-  </section>
+<!-- CERTIFICATIONS & BADGES -->
+<section id="certifications" class="card glass">
+    <h2>Certifications & Badges</h2>
 
-  <!-- Education -->
-  <section id="education" class="content-section">
-    <h2>Education</h2>
-    <p>Diploma in Computer Science – Loyola Polytechnic</p>
+    <div class="certifications-container">
 
-  </section>
+        <div class="project glass">
+            <h3>Google Data Analytics Certificate</h3>
+            <p>Issued by Google</p>
+        </div>
 
+        <div class="project glass">
+            <h3>AWS Cloud Practitioner Badge</h3>
+            <p>Issued by Amazon Web Services</p>
+        </div>
 
-<!-- Contact -->
-<section id="contact" class="content-section">
+        <div class="project glass">
+            <h3>Python Programming Certification</h3>
+            <p>Issued by Infosys Springboard</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="card glass">
+    <h2>Achievements</h2>
+
+    <ol class="achievement-list">
+        <li>Built and deployed the OPD online file storage system.</li>
+        <li>Completed multiple certifications in AI, ML, and Cloud Computing.</li>
+        <li>Participated in national-level technical workshops and hackathons.</li>
+        <li>Developed responsive web applications using HTML, CSS, and JavaScript.</li>
+        <li>Consistently improved programming skills through personal projects.</li>
+    </ol>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card glass">
   <h2>Contact</h2>
-  <p>
-    <i class="fas fa-envelope"></i>
-    <a href="mailto:chandukalapareddy@gmail.com">chandukalapareddy@gmail.com</a>
+  <p><i class="fas fa-phone"></i> +91 8330965648</p>
+
+  <p><i class="fas fa-envelope"></i> 
+    <a href="mailto:kalapareddychandu@gmail.com">Email</a>
   </p>
-  <p>
-    <i class="fab fa-linkedin"></i>
-    <a href="https://www.linkedin.com/in/chandu-kumar-reddy-kalapareddy-246721368/" target="_blank">linkedin.com/in/chandukumar</a>
-  </p>
-  <p>
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/Chandu-1112" target="_blank">github.com/chandukumar</a>
+  <p><i class="fab fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/chandu-kumar-reddy-kalapareddy-030099372" target="_blank">LinkedIn</a>      
+
+  <p><i class="fab fa-github"></i>
+    <a href="https://github.com/Chandu-1112" target="_blank">GitHub</a>
   </p>
 </section>
+
+<script>
+const text = "Chandu Kumar Reddy";
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 100);
+  }
+}
+type();
+</script>
 
 </body>
 </html>
