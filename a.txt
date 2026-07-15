@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chandu Kumar Reddy Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="brand">CKR</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Open to Internships</div>
+      <h1 class="hero-name">Hi, I'm<br><span id="typing-cursor"></span></h1>
+      <p class="hero-role">AI & ML Student &nbsp; &nbsp;·&nbsp; MITS, Andhra Pradesh</p>
+      <div class="hero-cta">
+        <a href="Chandu_Resume.pdf" target="_blank" class="btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn-outline">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <img src="chandu.png" alt="Chandu Kumar Reddy" onerror="this.style.background='linear-gradient(135deg,#6366f1,#38bdf8)'"/>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card">
+      <p style="font-size:15px; color:var(--muted); line-height:1.9;">
+        I'm a B.Tech student specialising in <strong style="color:var(--text)">Artificial Intelligence & Machine Learning</strong> at MITS, Andhra Pradesh (graduating May 2029). I build full-stack web apps, explore machine learning pipelines, and love turning ideas into real, deployed products. I'm actively seeking internship opportunities at top MNCs to apply my skills in data science, AI, and software development.
+      </p>
+      <div class="about-grid">
+        <div class="about-stat"><div class="num">2+</div><div class="lbl">Projects Deployed</div></div>
+        <div class="about-stat"><div class="num">5+</div><div class="lbl">Certifications Earned</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="skill-cat-label">Languages</div>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-label">ML & Data Science</div>
+        <div class="skill-tags">
+          <span class="tag">NumPy</span>
+          <span class="tag">Pandas</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-label">Tools & Platforms</div>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-label">Frameworks & DBs</div>
+        <div class="skill-tags">
+          <span class="tag">Streamlit</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Gemini API</span>
+        </div>
+      </div>
+      <div class="skill-category" style="grid-column:1/-1">
+        <div class="skill-cat-label">CS Fundamentals</div>
+        <div class="skill-tags">
+          <span class="tag">DSA</span>
+          <span class="tag">OOP</span>
+          <span class="tag">DBMS</span>
+          <span class="tag">Operating Systems</span>
+          <span class="tag">Computer Networks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" onclick="window.open('https://github.com/Chandu-1112/ecommerce-dashboard','_blank')">
+        <div>
+          <div class="project-title">AI-Integrated E-Commerce Analytics Dashboard</div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Streamlit</span>
+            <span class="stack-tag">Gemini API</span>
+          </div>
+          <ul class="project-bullets">
+            <li>Full-stack analytics dashboard with real-time querying and sales visualization</li>
+            <li>Integrated Google Gemini API for AI chatbot that auto-generates SQL from natural language</li>
+            <li>Eliminated manual SQL report writing for non-technical users via conversational interface</li>
+          </ul>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square project-link"></i>
+      </div>
+      <div class="project-card" onclick="window.open('https://weblearn-1bfh.onrender.com','_blank')">
+        <div>
+          <div class="project-title">Web Learn</div>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <p class="project-desc">A platform to learn web development — responsive, deployed live on Render.</p>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square project-link"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container reveal">
+
+    <div class="section-header">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Certifications & Badges</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="cert-grid">
+
+      <!-- Python Programming -->
+      <a href="https://drive.google.com/file/d/1YRvAvCPTIjpzp8qbUivyn1Yf4J6wrKXj/view?usp=sharing" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(59,130,246,.12);color:#3b82f6;">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>Python Programming</h3>
+          <p class="cert-issuer">Infosys Springboard</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- HackerRank Python -->
+      <a href="https://www.hackerrank.com/certificates/f2df4376dce9" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(34,197,94,.12);color:#22c55e;">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>Python (Basic)</h3>
+          <p class="cert-issuer">HackerRank</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- HackerRank SQL -->
+      <a href="https://www.hackerrank.com/certificates/3807510f9801" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(249,115,22,.12);color:#f97316;">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>SQL (Basic)</h3>
+          <p class="cert-issuer">HackerRank</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- HackerRank JavaScript -->
+      <a href="https://www.hackerrank.com/certificates/c55b1777f992" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(250,204,21,.12);color:#eab308;">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>JavaScript (Basic)</h3>
+          <p class="cert-issuer">HackerRank</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- freeCodeCamp -->
+      <a href="https://www.freecodecamp.org/certification/chandukumarreddy/responsive-web-design" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(168,85,247,.12);color:#a855f7;">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>Responsive Web Design</h3>
+          <p class="cert-issuer">freeCodeCamp</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- GeeksforGeeks Python -->
+      <a href="https://drive.google.com/file/d/1YEitRYNdUVPDSjdT4feP_Z0ryo_YG0Br/view?usp=sharings" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(16,185,129,.12);color:#10b981;">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>Python SkillUp</h3>
+          <p class="cert-issuer">GeeksforGeeks</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- GeeksforGeeks AI -->
+      <a href="https://drive.google.com/file/d/1Y8Dohe6KIdt_yUQr-RXtUw5ub3rJHi0N/view?usp=sharing" target="_blank" class="cert-card-link">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon" style="background:rgba(236,72,153,.12);color:#ec4899;">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="cert-badge-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+          </div>
+
+          <h3>AI Tools SkillUp</h3>
+          <p class="cert-issuer">GeeksforGeeks</p>
+
+          <div class="cert-meta">
+            <span class="cert-status">Verified</span>
+            <span class="cert-arrow">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+      <!-- Microsoft AI Skills Fest 2026 -->
+<a href="https://www.credly.com/earner/earned/badge/f81799ca-595c-4fa9-b37a-ceb3b097bf2e"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="cert-card-link">
+
+  <div class="cert-card">
+
+    <div class="cert-header">
+      <div class="cert-icon"
+           style="background:rgba(0,120,215,.12);color:#0078D7;">
+        <i class="fab fa-microsoft"></i>
+      </div>
+
+      <div class="cert-badge-icon">
+        <i class="fas fa-award"></i>
+      </div>
+    </div>
+
+    <h3>AI Skills Fest 2026</h3>
+    <p class="cert-issuer">Microsoft</p>
+
+    <div class="cert-meta">
+      <span class="cert-status">Verified</span>
+
+      <span class="cert-arrow">
+        <i class="fas fa-external-link-alt"></i>
+      </span>
+    </div>
+
+  </div>
+</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CODING PROFILES -->
+<section id="coding">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-label">Problem Solving</div>
+      <h2 class="section-title">Coding Profiles</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="coding-grid">
+      <a class="coding-card" href="https://leetcode.com/u/pIj976fB2l/" target="_blank">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width="24" style="filter: none;">
+       <h3>LeetCode</h3>
+       <p>Arrays · DP · Binary Search<br>Targeting 100+ problems</p>
+      </a>
+      <a class="coding-card" href="https://www.hackerrank.com/profile/kalapareddychan1" target="_blank">
+        <div class="hackerrank-icon"></div>
+        <h3>HackerRank</h3>
+        <p>Timed contests &<br>algorithmic challenges</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-label">Highlights</div>
+      <h2 class="section-title">Achievements</h2>
+      <div class="section-divider"></div>
+    </div>
+    <ul class="achievement-list">
+      <li>
+        <div class="ach-num">1</div>
+        Independently designed and deployed an AI analytics dashboard integrating Gemini AI, MySQL, and Streamlit.
+      </li>
+      <li>
+        <div class="ach-num">2</div>
+        Earned 3+ verified certifications in Python, SQL, and JavaScript from HackerRank and Infosys Springboard.
+      </li>
+      <li>
+        <div class="ach-num">3</div>
+        Participated in Microsoft AI Skill Fest 2026.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-label">Let's Connect</div>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-item" href="tel:+918330965648">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <div class="label">Phone</div>
+          <div class="value">+91 83309 65648</div>
+        </div>
+      </a>
+      <a class="contact-item" href="mailto:kalapareddychandu@gmail.com">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <div class="label">Email</div>
+          <div class="value">kalapareddychandu@gmail.com</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/chandu1112" target="_blank">
+        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+        <div>
+          <div class="label">LinkedIn</div>
+          <div class="value">linkedin.com/in/chandu1112</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://github.com/Chandu-1112" target="_blank">
+        <div class="contact-icon"><i class="fab fa-github"></i></div>
+        <div>
+          <div class="label">GitHub</div>
+          <div class="value">github.com/Chandu-1112</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://myportfolio-7lqd.onrender.com" target="_blank" style="grid-column:1/-1">
+        <div class="contact-icon"><i class="fas fa-globe"></i></div>
+        <div>
+          <div class="label">Portfolio</div>
+          <div class="value">myportfolio-7lqd.onrender.com</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Built by Chandu Kumar Reddy &nbsp;·&nbsp; B.Tech AI & ML, MITS &nbsp;·&nbsp; 2026
+</footer>
+
+<script>
+  // Typing animation
+  const name = "Chandu Kumar Reddy";
+  let i = 0;
+  const el = document.getElementById('typing-cursor');
+  function type() {
+    if (i < name.length) {
+      el.textContent += name[i++];
+      setTimeout(type, 90);
+    }
+  }
+  setTimeout(type, 600);
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Active nav highlight
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if(window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navLinks.forEach(a => {
+      const isActive = a.getAttribute('href') === '#' + current;
+      a.style.color = isActive ? 'var(--text)' : '';
+      a.style.background = isActive ? 'var(--surface2)' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
